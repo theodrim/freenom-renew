@@ -202,7 +202,7 @@ class FreeNom
             }
 
             $domainInfo .= sprintf('<a href="http://%s" rel="noopener" target="_blank">%s</a>还有<span style="font-weight: bold; font-size: 16px;">%d</span>天到期，', $domain, $domain, $days);
-            $domainInfoTG .= sprintf('[%s](http://%s)还有*%d*天到期，', $domain, $domain, $days);
+            $domainInfoTG .= sprintf('[%s](http://%s)has*%d*days*to*expire，', $domain, $domain, $days);
         }
 
         if ($notRenewed || $renewed) {
@@ -233,7 +233,7 @@ class FreeNom
                     '',
                     'notice'
                 );
-                TelegramBot::send("报告，今天没有域名需要续期，所有域名情况如下：\n\n" . $domainInfoTG);
+                TelegramBot::send("Report, no domains need to be renewed today, the status of all domains is as follows：\n\n" . $domainInfoTG);
             } else {
                 system_log('当前通知频率为「仅当有续期操作时」，故本次不会推送通知');
             }
