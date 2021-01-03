@@ -202,7 +202,7 @@ class FreeNom
             }
 
             $domainInfo .= sprintf('<a href="http://%s" rel="noopener" target="_blank">%s</a>还有<span style="font-weight: bold; font-size: 16px;">%d</span>天到期，', $domain, $domain, $days);
-            $domainInfoTG .= sprintf('[%s](http://%s)has*%d*days*to*expire，', $domain, $domain, $days);
+            $domainInfoTG .= sprintf('[%s](http://%s) has *%d* days to expire.', $domain, $domain, $days);
         }
 
         if ($notRenewed || $renewed) {
