@@ -295,6 +295,7 @@ $ cd /data/wwwroot/freenom/ && php run
 好了，做完上面六步后就不需要其它任何操作了。现在每天上午十点左右`Github Actions`会自动触发执行本项目，注意查收域名相关邮件。
 
 
+
 <hr>
 
 遇到任何问题或 Bug 欢迎提 [issues](https://github.com/luolongfei/freenom/issues) （请按模板格式提`issues`，以便作者更快复现你的问题），
