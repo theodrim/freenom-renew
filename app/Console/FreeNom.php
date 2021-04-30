@@ -81,7 +81,7 @@ class FreeNom
             'debug' => config('debug')
         ]);
 
-        system_log(sprintf('当前程序版本 %s', self::VERSION));
+        system_log(sprintf('version %s', self::VERSION));
     }
 
     /**
@@ -235,9 +235,9 @@ class FreeNom
                 );
                 TelegramBot::send("Report, no domains need to be renewed today, the status of all domains is as follows：\n\n" . $domainInfoTG);
             } else {
-                system_log('当前通知频率为「仅当有续期操作时」，故本次不会推送通知');
+                system_log('Current notification settings is alert only on renew, so not sending any.');
             }
-            system_log(sprintf('%s：<green>执行成功，今次没有需要续期的域名</green>', $this->username));
+            system_log(sprintf('%s：<green>success, no domain need renew</green>', $this->username));
         }
     }
 
