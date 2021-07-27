@@ -237,7 +237,7 @@ class FreeNom
             } else {
                 system_log('Current notification settings is alert only on renew, so not sending any.');
             }
-            system_log(sprintf('%s：<green>success, no domain need renew</green>', $this->username));
+            system_log(sprintf('<green>success, no domain need renew</green>', $this->username));
         }
     }
 
